@@ -1,0 +1,6 @@
+2025-06-01 09:09:01: Init - Done Proccessing...
+2025-06-01 09:09:22: Total time elapsed - 20.1869s
+2025-06-01 09:09:22: Run 9 Summary - model=acmsmn, dataset=texas, variant=1, structure_info=0, fixed_splits=0, Hidden=128, layers=2, hops=3, resnet=0, layer_norm=0, att_hopwise_distinct=0, fuse_hop=mlp, normalization=none, online_cs=sub_topk, lambda_pen=1, lambda_2hop=0.5, threshold=0.9, comm_size=20, approach=distinct_hop_svds, lr=0.0100, weight_decay=0.001000, dropout=0.2000, Test_Mean=0.8361, Test_Std=0.0733, runtime_average=2.02s, epoch_average=20.39ms, CommunitySearchTime=0.001393s, NMI=0.0000 (std=0.0000), Jaccard=0.7737 (std=0.0000), F1=0.8724 (std=0.0000)
+2025-06-01 09:09:33: Init - Done Proccessing...
+2025-06-01 09:09:56: Total time elapsed - 21.5447s
+2025-06-01 09:09:56: Run 9 Summary - model=acmsmn, dataset=texas, variant=1, structure_info=0, fixed_splits=0, Hidden=1024, layers=2, hops=3, resnet=0, layer_norm=0, att_hopwise_distinct=0, fuse_hop=mlp, normalization=none, online_cs=sub_topk, lambda_pen=1, lambda_2hop=0.5, threshold=0.9, comm_size=20, approach=distinct_hop_svds, lr=0.0100, weight_decay=0.001000, dropout=0.2000, Test_Mean=0.8475, Test_Std=0.0587, runtime_average=2.15s, epoch_average=21.76ms, CommunitySearchTime=0.000878s, NMI=0.0000 (std=0.0000), Jaccard=0.8758 (std=0.0000), F1=0.9338 (std=0.0000)

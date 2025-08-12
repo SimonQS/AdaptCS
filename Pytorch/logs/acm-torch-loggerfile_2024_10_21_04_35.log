@@ -1,0 +1,9 @@
+2024-10-21 04:35:17: Init - Done Proccessing...
+2024-10-21 04:35:20: Total time elapsed - 2.8916s
+2024-10-21 04:35:20: Run 0 Summary - model: acmsmn, dataset: cora, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.7783, Test Std: 0.0000, runtime average time: 2.89s, epoch average time: 29.20ms
+2024-10-21 04:35:35: Init - Done Proccessing...
+2024-10-21 04:35:37: Total time elapsed - 2.0594s
+2024-10-21 04:35:38: Run 0 Summary - model: acmgcnp, dataset: cora, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.8555, Test Std: 0.0000, runtime average time: 2.06s, epoch average time: 20.79ms
+2024-10-21 04:35:44: Init - Done Proccessing...
+2024-10-21 04:35:48: Total time elapsed - 2.8679s
+2024-10-21 04:35:48: Run 0 Summary - model: acmsmn, dataset: cora, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.7800, Test Std: 0.0000, runtime average time: 2.87s, epoch average time: 28.97ms

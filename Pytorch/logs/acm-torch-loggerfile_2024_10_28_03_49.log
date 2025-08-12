@@ -1,0 +1,22 @@
+2024-10-28 03:49:13: Init - Done Proccessing...
+2024-10-28 03:49:15: Total time elapsed - 1.9918s
+2024-10-28 03:49:15: Run 0 Summary - model: acmgcnp, dataset: cora, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.0855, Test Std: 0.2565, runtime average time: 0.20s, epoch average time: 20.10ms
+2024-10-28 03:49:17: Total time elapsed - 3.8236s
+2024-10-28 03:49:17: Run 1 Summary - model: acmgcnp, dataset: cora, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.1742, Test Std: 0.3486, runtime average time: 0.38s, epoch average time: 19.31ms
+2024-10-28 03:49:19: Total time elapsed - 5.6604s
+2024-10-28 03:49:19: Run 2 Summary - model: acmgcnp, dataset: cora, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.2608, Test Std: 0.3984, runtime average time: 0.57s, epoch average time: 19.06ms
+2024-10-28 03:49:21: Total time elapsed - 7.4873s
+2024-10-28 03:49:21: Run 3 Summary - model: acmgcnp, dataset: cora, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.3489, Test Std: 0.4274, runtime average time: 0.75s, epoch average time: 18.91ms
+2024-10-28 03:49:23: Total time elapsed - 9.3193s
+2024-10-28 03:49:23: Run 4 Summary - model: acmgcnp, dataset: cora, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.4360, Test Std: 0.4361, runtime average time: 0.93s, epoch average time: 18.83ms
+2024-10-28 03:49:25: Total time elapsed - 11.1548s
+2024-10-28 03:49:25: Run 5 Summary - model: acmgcnp, dataset: cora, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.5211, Test Std: 0.4256, runtime average time: 1.12s, epoch average time: 18.78ms
+2024-10-28 03:49:26: Total time elapsed - 12.9844s
+2024-10-28 03:49:26: Run 6 Summary - model: acmgcnp, dataset: cora, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.6062, Test Std: 0.3970, runtime average time: 1.30s, epoch average time: 18.74ms
+2024-10-28 03:49:28: Total time elapsed - 14.8144s
+2024-10-28 03:49:28: Run 7 Summary - model: acmgcnp, dataset: cora, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.6934, Test Std: 0.3469, runtime average time: 1.48s, epoch average time: 18.70ms
+2024-10-28 03:49:30: Total time elapsed - 16.6555s
+2024-10-28 03:49:30: Run 8 Summary - model: acmgcnp, dataset: cora, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.7803, Test Std: 0.2603, runtime average time: 1.67s, epoch average time: 18.69ms
+2024-10-28 03:49:32: Total time elapsed - 18.4977s
+2024-10-28 03:49:32: Run 9 Summary - model: acmgcnp, dataset: cora, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.8662, Test Std: 0.0117, runtime average time: 1.85s, epoch average time: 18.68ms
+2024-10-28 03:49:48: Init - Done Proccessing...

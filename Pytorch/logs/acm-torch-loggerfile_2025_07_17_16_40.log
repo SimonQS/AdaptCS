@@ -1,0 +1,3 @@
+2025-07-17 16:40:01: Init - Done Proccessing...
+2025-07-17 16:41:17: Total time elapsed - 74.2136s
+2025-07-17 16:41:17: Run 9 Summary - model=acmsmn, dataset=chameleon, variant=1, structure_info=1, fixed_splits=0, Hidden=512, layers=2, hops=5, resnet=0, layer_norm=1, att_hopwise_distinct=0, fuse_hop=bank, normalization=global_w, online_cs=adaptive_cs, lambda_pen=0.5, lambda_2hop=0.5, threshold=0.9, svd_rank=100, top=2, comm_size=150, approach=distinct_hop_svds_low, lr=0.0100, weight_decay=0.001000, dropout=0.5000, Test_Mean=0.5039, Test_Std=0.0315, runtime_average=7.42s, epoch_average=74.96ms, CommunitySearchTime=0.003727s, NMI=0.0000 (std=0.0000), Jaccard=0.4961 (std=0.0000), F1=0.6632 (std=0.0000)

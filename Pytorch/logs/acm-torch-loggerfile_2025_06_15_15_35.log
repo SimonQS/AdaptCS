@@ -1,0 +1,3 @@
+2025-06-15 15:35:00: Init - Done Proccessing...
+2025-06-15 15:36:59: Total time elapsed - 117.7859s
+2025-06-15 15:36:59: Run 9 Summary - model=acmsmn, dataset=wisconsin, variant=1, structure_info=1, fixed_splits=0, Hidden=512, layers=2, hops=8, resnet=1, layer_norm=1, att_hopwise_distinct=0, fuse_hop=mlp, normalization=global_w, online_cs=bfs_teleport, lambda_pen=1, lambda_2hop=0.5, threshold=0.9, comm_size=30, approach=distinct_hop_svds_low, lr=0.0100, weight_decay=0.001000, dropout=0.5000, Test_Mean=0.8688, Test_Std=0.0346, runtime_average=11.78s, epoch_average=118.98ms, CommunitySearchTime=0.009954s, NMI=0.0000 (std=0.0000), Jaccard=0.8370 (std=0.0000), F1=0.9112 (std=0.0000)

@@ -1,0 +1,3 @@
+2025-06-10 09:13:42: Init - Done Proccessing...
+2025-06-10 09:15:31: Total time elapsed - 35.4548s
+2025-06-10 09:15:31: Run 9 Summary - model=icsgnn_tanh, dataset=chameleon, variant=1, structure_info=0, fixed_splits=0, Hidden=1024, layers=2, hops=9, resnet=1, layer_norm=1, att_hopwise_distinct=0, fuse_hop=mlp, normalization=none, online_cs=signed_cs, lambda_pen=1, lambda_2hop=0.5, threshold=0.9, comm_size=30, approach=distinct_hop, lr=0.0100, weight_decay=0.001000, dropout=0.2000, Test_Mean=0.2899, Test_Std=0.1173, runtime_average=3.55s, epoch_average=35.81ms, CommunitySearchTime=1.456686s, NMI=0.0000 (std=0.0000), Jaccard=0.4855 (std=0.0000), F1=0.6537 (std=0.0000)

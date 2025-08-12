@@ -1,0 +1,13 @@
+2024-11-14 06:42:44: Init - Done Proccessing...
+2024-11-14 06:42:48: Total time elapsed - 3.3296s
+2024-11-14 06:42:48: Run 0 Summary - model: acmsmn, dataset: texas, variant: 0, init_layers_X: 1, structure_info: 1, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.0784, Test Std: 0.2351, runtime average time: 0.33s, epoch average time: 33.62ms
+2024-11-14 06:42:51: Total time elapsed - 6.4397s
+2024-11-14 06:42:51: Run 1 Summary - model: acmsmn, dataset: texas, variant: 0, init_layers_X: 1, structure_info: 1, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.1486, Test Std: 0.2978, runtime average time: 0.64s, epoch average time: 32.52ms
+2024-11-14 06:42:54: Total time elapsed - 9.5358s
+2024-11-14 06:42:54: Run 2 Summary - model: acmsmn, dataset: texas, variant: 0, init_layers_X: 1, structure_info: 1, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.2027, Test Std: 0.3145, runtime average time: 0.95s, epoch average time: 32.11ms
+2024-11-14 06:42:57: Total time elapsed - 12.6873s
+2024-11-14 06:42:57: Run 3 Summary - model: acmsmn, dataset: texas, variant: 0, init_layers_X: 1, structure_info: 1, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.2676, Test Std: 0.3324, runtime average time: 1.27s, epoch average time: 32.04ms
+2024-11-14 06:43:00: Total time elapsed - 15.6841s
+2024-11-14 06:43:00: Run 4 Summary - model: acmsmn, dataset: texas, variant: 0, init_layers_X: 1, structure_info: 1, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.3405, Test Std: 0.3455, runtime average time: 1.57s, epoch average time: 31.68ms
+2024-11-14 06:43:03: Total time elapsed - 18.6914s
+2024-11-14 06:43:03: Run 5 Summary - model: acmsmn, dataset: texas, variant: 0, init_layers_X: 1, structure_info: 1, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.4135, Test Std: 0.3429, runtime average time: 1.87s, epoch average time: 31.47ms

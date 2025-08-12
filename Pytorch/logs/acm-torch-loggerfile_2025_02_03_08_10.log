@@ -1,0 +1,13 @@
+2025-02-03 08:10:39: Init - Done Proccessing...
+2025-02-03 08:10:42: Total time elapsed - 2.5443s
+2025-02-03 08:10:42: Run 0 Summary - model: acmsmn, dataset: texas, variant: 1, init_layers_X: 2, structure_info: 0, Hidden: 512, learning rate 0.0200, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.0852, Test Std: 0.2557, runtime average time: 0.25s, epoch average time: 25.69ms
+2025-02-03 08:10:44: Total time elapsed - 4.9261s
+2025-02-03 08:10:44: Run 1 Summary - model: acmsmn, dataset: texas, variant: 1, init_layers_X: 2, structure_info: 0, Hidden: 512, learning rate 0.0200, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.1689, Test Std: 0.3377, runtime average time: 0.49s, epoch average time: 24.88ms
+2025-02-03 08:10:46: Total time elapsed - 7.3035s
+2025-02-03 08:10:46: Run 2 Summary - model: acmsmn, dataset: texas, variant: 1, init_layers_X: 2, structure_info: 0, Hidden: 512, learning rate 0.0200, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.2557, Test Std: 0.3907, runtime average time: 0.73s, epoch average time: 24.59ms
+2025-02-03 08:10:49: Total time elapsed - 9.6320s
+2025-02-03 08:10:49: Run 3 Summary - model: acmsmn, dataset: texas, variant: 1, init_layers_X: 2, structure_info: 0, Hidden: 512, learning rate 0.0200, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.3393, Test Std: 0.4157, runtime average time: 0.96s, epoch average time: 24.32ms
+2025-02-03 08:10:51: Total time elapsed - 12.0150s
+2025-02-03 08:10:51: Run 4 Summary - model: acmsmn, dataset: texas, variant: 1, init_layers_X: 2, structure_info: 0, Hidden: 512, learning rate 0.0200, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.4262, Test Std: 0.4264, runtime average time: 1.20s, epoch average time: 24.27ms
+2025-02-03 08:10:54: Total time elapsed - 14.5689s
+2025-02-03 08:10:54: Run 5 Summary - model: acmsmn, dataset: texas, variant: 1, init_layers_X: 2, structure_info: 0, Hidden: 512, learning rate 0.0200, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.5115, Test Std: 0.4177, runtime average time: 1.46s, epoch average time: 24.53ms

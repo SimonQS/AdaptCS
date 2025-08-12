@@ -1,0 +1,21 @@
+2024-10-29 04:12:29: Init - Done Proccessing...
+2024-10-29 04:12:32: Total time elapsed - 2.0170s
+2024-10-29 04:12:32: Run 0 Summary - model: acmgcnpp, dataset: cornell, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.0649, Test Std: 0.1946, runtime average time: 0.20s, epoch average time: 20.37ms
+2024-10-29 04:12:34: Total time elapsed - 3.9113s
+2024-10-29 04:12:34: Run 1 Summary - model: acmgcnpp, dataset: cornell, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.1405, Test Std: 0.2821, runtime average time: 0.39s, epoch average time: 19.75ms
+2024-10-29 04:12:35: Total time elapsed - 5.8156s
+2024-10-29 04:12:35: Run 2 Summary - model: acmgcnpp, dataset: cornell, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.2189, Test Std: 0.3359, runtime average time: 0.58s, epoch average time: 19.58ms
+2024-10-29 04:12:37: Total time elapsed - 7.7064s
+2024-10-29 04:12:37: Run 3 Summary - model: acmgcnpp, dataset: cornell, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.2784, Test Std: 0.3444, runtime average time: 0.77s, epoch average time: 19.46ms
+2024-10-29 04:12:39: Total time elapsed - 9.5988s
+2024-10-29 04:12:39: Run 4 Summary - model: acmgcnpp, dataset: cornell, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.3595, Test Std: 0.3642, runtime average time: 0.96s, epoch average time: 19.39ms
+2024-10-29 04:12:41: Total time elapsed - 11.4897s
+2024-10-29 04:12:41: Run 5 Summary - model: acmgcnpp, dataset: cornell, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.4351, Test Std: 0.3603, runtime average time: 1.15s, epoch average time: 19.34ms
+2024-10-29 04:12:43: Total time elapsed - 13.3793s
+2024-10-29 04:12:43: Run 6 Summary - model: acmgcnpp, dataset: cornell, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.5216, Test Std: 0.3491, runtime average time: 1.34s, epoch average time: 19.31ms
+2024-10-29 04:12:45: Total time elapsed - 15.2818s
+2024-10-29 04:12:45: Run 7 Summary - model: acmgcnpp, dataset: cornell, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.5919, Test Std: 0.3049, runtime average time: 1.53s, epoch average time: 19.29ms
+2024-10-29 04:12:47: Total time elapsed - 16.8451s
+2024-10-29 04:12:47: Run 8 Summary - model: acmgcnpp, dataset: cornell, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.6595, Test Std: 0.2326, runtime average time: 1.68s, epoch average time: 18.91ms
+2024-10-29 04:12:48: Total time elapsed - 17.9352s
+2024-10-29 04:12:48: Run 9 Summary - model: acmgcnpp, dataset: cornell, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.7378, Test Std: 0.0774, runtime average time: 1.79s, epoch average time: 18.12ms

@@ -1,0 +1,7 @@
+2025-01-31 06:09:18: Init - Done Proccessing...
+2025-01-31 06:10:19: Total time elapsed - 50.9503s
+2025-01-31 06:10:19: Run 0 Summary - model: acmsmn, dataset: pubmed, variant: 1, init_layers_X: 2, structure_info: 0, Hidden: 256, learning rate 0.0200, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.0889, Test Std: 0.2667, runtime average time: 5.09s, epoch average time: 514.64ms
+2025-01-31 06:11:10: Total time elapsed - 101.8315s
+2025-01-31 06:11:10: Run 1 Summary - model: acmsmn, dataset: pubmed, variant: 1, init_layers_X: 2, structure_info: 0, Hidden: 256, learning rate 0.0200, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.1783, Test Std: 0.3567, runtime average time: 10.18s, epoch average time: 514.30ms
+2025-01-31 06:12:01: Total time elapsed - 152.6906s
+2025-01-31 06:12:01: Run 2 Summary - model: acmsmn, dataset: pubmed, variant: 1, init_layers_X: 2, structure_info: 0, Hidden: 256, learning rate 0.0200, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.2676, Test Std: 0.4088, runtime average time: 15.27s, epoch average time: 514.11ms

@@ -1,0 +1,21 @@
+2024-10-30 03:07:28: Init - Done Proccessing...
+2024-10-30 03:07:39: Total time elapsed - 10.9878s
+2024-10-30 03:07:39: Run 0 Summary - model: acmsmn, dataset: cora, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.0847, Test Std: 0.2541, runtime average time: 1.10s, epoch average time: 110.98ms
+2024-10-30 03:07:50: Total time elapsed - 21.8372s
+2024-10-30 03:07:50: Run 1 Summary - model: acmsmn, dataset: cora, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.1724, Test Std: 0.3449, runtime average time: 2.18s, epoch average time: 110.29ms
+2024-10-30 03:08:01: Total time elapsed - 32.6867s
+2024-10-30 03:08:01: Run 2 Summary - model: acmsmn, dataset: cora, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.2614, Test Std: 0.3994, runtime average time: 3.27s, epoch average time: 110.06ms
+2024-10-30 03:08:12: Total time elapsed - 43.5519s
+2024-10-30 03:08:12: Run 3 Summary - model: acmsmn, dataset: cora, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.3487, Test Std: 0.4272, runtime average time: 4.36s, epoch average time: 109.98ms
+2024-10-30 03:08:23: Total time elapsed - 54.4141s
+2024-10-30 03:08:23: Run 4 Summary - model: acmsmn, dataset: cora, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.4338, Test Std: 0.4340, runtime average time: 5.44s, epoch average time: 109.93ms
+2024-10-30 03:08:34: Total time elapsed - 65.2772s
+2024-10-30 03:08:34: Run 5 Summary - model: acmsmn, dataset: cora, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.5197, Test Std: 0.4245, runtime average time: 6.53s, epoch average time: 109.89ms
+2024-10-30 03:08:44: Total time elapsed - 76.1485s
+2024-10-30 03:08:44: Run 6 Summary - model: acmsmn, dataset: cora, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.6074, Test Std: 0.3978, runtime average time: 7.61s, epoch average time: 109.88ms
+2024-10-30 03:08:55: Total time elapsed - 87.0281s
+2024-10-30 03:08:55: Run 7 Summary - model: acmsmn, dataset: cora, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.6960, Test Std: 0.3482, runtime average time: 8.70s, epoch average time: 109.88ms
+2024-10-30 03:09:06: Total time elapsed - 97.9174s
+2024-10-30 03:09:06: Run 8 Summary - model: acmsmn, dataset: cora, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.7829, Test Std: 0.2613, runtime average time: 9.79s, epoch average time: 109.90ms
+2024-10-30 03:09:17: Total time elapsed - 108.8180s
+2024-10-30 03:09:17: Run 9 Summary - model: acmsmn, dataset: cora, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.8686, Test Std: 0.0137, runtime average time: 10.88s, epoch average time: 109.92ms

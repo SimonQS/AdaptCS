@@ -1,0 +1,21 @@
+2024-11-04 04:49:29: Init - Done Proccessing...
+2024-11-04 04:49:33: Total time elapsed - 3.6908s
+2024-11-04 04:49:33: Run 0 Summary - model: acmsmn, dataset: texas, variant: 1, init_layers_X: 1, structure_info: 1, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.0869, Test Std: 0.2607, runtime average time: 0.37s, epoch average time: 37.28ms
+2024-11-04 04:49:37: Total time elapsed - 7.3192s
+2024-11-04 04:49:37: Run 1 Summary - model: acmsmn, dataset: texas, variant: 1, init_layers_X: 1, structure_info: 1, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.1738, Test Std: 0.3475, runtime average time: 0.73s, epoch average time: 36.96ms
+2024-11-04 04:49:40: Total time elapsed - 10.8465s
+2024-11-04 04:49:40: Run 2 Summary - model: acmsmn, dataset: texas, variant: 1, init_layers_X: 1, structure_info: 1, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.2607, Test Std: 0.3982, runtime average time: 1.08s, epoch average time: 36.52ms
+2024-11-04 04:49:44: Total time elapsed - 14.6053s
+2024-11-04 04:49:44: Run 3 Summary - model: acmsmn, dataset: texas, variant: 1, init_layers_X: 1, structure_info: 1, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.3525, Test Std: 0.4319, runtime average time: 1.46s, epoch average time: 36.88ms
+2024-11-04 04:49:47: Total time elapsed - 18.0334s
+2024-11-04 04:49:47: Run 4 Summary - model: acmsmn, dataset: texas, variant: 1, init_layers_X: 1, structure_info: 1, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.4459, Test Std: 0.4464, runtime average time: 1.80s, epoch average time: 36.43ms
+2024-11-04 04:49:51: Total time elapsed - 21.4689s
+2024-11-04 04:49:51: Run 5 Summary - model: acmsmn, dataset: texas, variant: 1, init_layers_X: 1, structure_info: 1, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.5311, Test Std: 0.4343, runtime average time: 2.15s, epoch average time: 36.14ms
+2024-11-04 04:49:54: Total time elapsed - 25.1884s
+2024-11-04 04:49:54: Run 6 Summary - model: acmsmn, dataset: texas, variant: 1, init_layers_X: 1, structure_info: 1, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.6082, Test Std: 0.4002, runtime average time: 2.52s, epoch average time: 36.35ms
+2024-11-04 04:49:58: Total time elapsed - 28.5388s
+2024-11-04 04:49:58: Run 7 Summary - model: acmsmn, dataset: texas, variant: 1, init_layers_X: 1, structure_info: 1, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.6967, Test Std: 0.3508, runtime average time: 2.85s, epoch average time: 36.03ms
+2024-11-04 04:50:01: Total time elapsed - 32.1303s
+2024-11-04 04:50:01: Run 8 Summary - model: acmsmn, dataset: texas, variant: 1, init_layers_X: 1, structure_info: 1, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.7705, Test Std: 0.2631, runtime average time: 3.21s, epoch average time: 36.06ms
+2024-11-04 04:50:05: Total time elapsed - 35.9641s
+2024-11-04 04:50:05: Run 9 Summary - model: acmsmn, dataset: texas, variant: 1, init_layers_X: 1, structure_info: 1, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.8574, Test Std: 0.0573, runtime average time: 3.60s, epoch average time: 36.33ms

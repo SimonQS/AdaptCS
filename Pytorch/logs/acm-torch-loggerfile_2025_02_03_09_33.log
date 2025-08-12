@@ -1,0 +1,21 @@
+2025-02-03 09:33:08: Init - Done Proccessing...
+2025-02-03 09:33:17: Total time elapsed - 8.1942s
+2025-02-03 09:33:17: Run 0 Summary - model: acmsmn, dataset: wisconsin, variant: 1, init_layers_X: 2, structure_info: 0, Hidden: 1024, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.0925, Test Std: 0.2775, runtime average time: 0.82s, epoch average time: 82.76ms
+2025-02-03 09:33:24: Total time elapsed - 15.5794s
+2025-02-03 09:33:24: Run 1 Summary - model: acmsmn, dataset: wisconsin, variant: 1, init_layers_X: 2, structure_info: 0, Hidden: 1024, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.1888, Test Std: 0.3776, runtime average time: 1.56s, epoch average time: 78.68ms
+2025-02-03 09:33:32: Total time elapsed - 23.2700s
+2025-02-03 09:33:32: Run 2 Summary - model: acmsmn, dataset: wisconsin, variant: 1, init_layers_X: 2, structure_info: 0, Hidden: 1024, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.2775, Test Std: 0.4242, runtime average time: 2.33s, epoch average time: 78.35ms
+2025-02-03 09:33:40: Total time elapsed - 31.3215s
+2025-02-03 09:33:40: Run 3 Summary - model: acmsmn, dataset: wisconsin, variant: 1, init_layers_X: 2, structure_info: 0, Hidden: 1024, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.3750, Test Std: 0.4598, runtime average time: 3.13s, epoch average time: 79.09ms
+2025-02-03 09:33:48: Total time elapsed - 38.8539s
+2025-02-03 09:33:48: Run 4 Summary - model: acmsmn, dataset: wisconsin, variant: 1, init_layers_X: 2, structure_info: 0, Hidden: 1024, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.4675, Test Std: 0.4680, runtime average time: 3.89s, epoch average time: 78.49ms
+2025-02-03 09:33:55: Total time elapsed - 46.4458s
+2025-02-03 09:33:55: Run 5 Summary - model: acmsmn, dataset: wisconsin, variant: 1, init_layers_X: 2, structure_info: 0, Hidden: 1024, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.5613, Test Std: 0.4588, runtime average time: 4.64s, epoch average time: 78.19ms
+2025-02-03 09:34:03: Total time elapsed - 54.5192s
+2025-02-03 09:34:03: Run 6 Summary - model: acmsmn, dataset: wisconsin, variant: 1, init_layers_X: 2, structure_info: 0, Hidden: 1024, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.6588, Test Std: 0.4320, runtime average time: 5.45s, epoch average time: 78.67ms
+2025-02-03 09:34:12: Total time elapsed - 62.9131s
+2025-02-03 09:34:12: Run 7 Summary - model: acmsmn, dataset: wisconsin, variant: 1, init_layers_X: 2, structure_info: 0, Hidden: 1024, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.7550, Test Std: 0.3784, runtime average time: 6.29s, epoch average time: 79.44ms
+2025-02-03 09:34:20: Total time elapsed - 71.1784s
+2025-02-03 09:34:20: Run 8 Summary - model: acmsmn, dataset: wisconsin, variant: 1, init_layers_X: 2, structure_info: 0, Hidden: 1024, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.8450, Test Std: 0.2831, runtime average time: 7.12s, epoch average time: 79.89ms
+2025-02-03 09:34:27: Total time elapsed - 78.4753s
+2025-02-03 09:34:27: Run 9 Summary - model: acmsmn, dataset: wisconsin, variant: 1, init_layers_X: 2, structure_info: 0, Hidden: 1024, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.9388, Test Std: 0.0288, runtime average time: 7.85s, epoch average time: 79.27ms

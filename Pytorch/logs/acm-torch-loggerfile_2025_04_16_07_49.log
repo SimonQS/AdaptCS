@@ -1,0 +1,3 @@
+2025-04-16 07:49:05: Init - Done Proccessing...
+2025-04-16 07:49:33: Total time elapsed - 25.0631s
+2025-04-16 07:49:33: Run 0 Summary - model=acmsmn, dataset=pubmed, variant=1, init_layers_X=2, structure_info=2, Hidden=1024, lr=0.0100, weight_decay=0.001000, dropout=0.2000, hops=9, resnet=0, layer_norm=0, att_hopwise_distinct=0, fuse_hop=mlp, layers=1, Test_Mean=0.0894, Test_Std=0.2683, runtime_average=2.46s, epoch_average=248.37ms, normalization=softmax, online_cs=sub_cs, lambda_pen=1, lambda_2hop=0.5, threshold=0.9, comm_size=20, CommunitySearchTime=0.008133s, NMI=0.0000 (std=nan), Jaccard=0.8600 (std=nan), F1=0.9247 (std=0.0000)

@@ -1,0 +1,9 @@
+2024-10-21 06:36:12: Init - Done Proccessing...
+2024-10-21 06:36:15: Total time elapsed - 2.2009s
+2024-10-21 06:36:15: Run 0 Summary - model: acmgcnpp, dataset: texas, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.9672, Test Std: 0.0000, runtime average time: 2.20s, epoch average time: 22.22ms
+2024-10-21 06:36:19: Init - Done Proccessing...
+2024-10-21 06:36:21: Total time elapsed - 1.6877s
+2024-10-21 06:36:21: Run 0 Summary - model: acmgcnpp, dataset: texas, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.9672, Test Std: 0.0000, runtime average time: 1.69s, epoch average time: 17.03ms
+2024-10-21 06:36:25: Init - Done Proccessing...
+2024-10-21 06:36:28: Total time elapsed - 1.8876s
+2024-10-21 06:36:28: Run 0 Summary - model: acmgcnpp, dataset: texas, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.9672, Test Std: 0.0000, runtime average time: 1.89s, epoch average time: 19.06ms

@@ -1,0 +1,3 @@
+2025-07-07 17:41:51: Init - Done Proccessing...
+2025-07-07 17:42:51: Total time elapsed - 55.5989s
+2025-07-07 17:42:51: Run 9 Summary - model=acmsmn, dataset=squirrel, variant=1, structure_info=2, fixed_splits=0, Hidden=512, layers=2, hops=5, resnet=1, layer_norm=1, att_hopwise_distinct=0, fuse_hop=mlp, normalization=global_w, online_cs=adaptive_cs, lambda_pen=0.5, lambda_2hop=0.5, threshold=0.9, comm_size=30, approach=distinct_hop_svds_low, lr=0.0100, weight_decay=0.001000, dropout=0.3000, Test_Mean=0.3427, Test_Std=0.0278, runtime_average=5.56s, epoch_average=56.16ms, CommunitySearchTime=0.000907s, NMI=0.0000 (std=0.0000), Jaccard=0.6379 (std=0.0000), F1=0.7789 (std=0.0000)

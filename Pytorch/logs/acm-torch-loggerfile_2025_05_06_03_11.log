@@ -1,0 +1,6 @@
+2025-05-06 03:11:20: Init - Done Proccessing...
+2025-05-06 03:11:31: Total time elapsed - 9.2735s
+2025-05-06 03:11:31: Run 9 Summary - model=icsgnn, dataset=pubmed, variant=1, structure_info=2, fixed_splits=0, Hidden=256, layers=1, hops=3, resnet=0, layer_norm=0, att_hopwise_distinct=0, fuse_hop=mlp, normalization=softmax, online_cs=sub_cs, lambda_pen=1, lambda_2hop=0.5, threshold=0.9, comm_size=20, approach=distinct_hop_svds, lr=0.0100, weight_decay=0.001000, dropout=0.2000, Test_Mean=0.8180, Test_Std=0.1212, runtime_average=0.93s, epoch_average=9.37ms, CommunitySearchTime=0.009161s, NMI=0.0000 (std=0.0000), Jaccard=0.8347 (std=0.0000), F1=0.9099 (std=0.0000)
+2025-05-06 03:11:54: Init - Done Proccessing...
+2025-05-06 03:12:57: Total time elapsed - 61.7687s
+2025-05-06 03:12:57: Run 9 Summary - model=qdgnn, dataset=pubmed, variant=1, structure_info=2, fixed_splits=0, Hidden=256, layers=1, hops=3, resnet=0, layer_norm=0, att_hopwise_distinct=0, fuse_hop=mlp, normalization=softmax, online_cs=sub_cs, lambda_pen=1, lambda_2hop=0.5, threshold=0.9, comm_size=20, approach=distinct_hop_svds, lr=0.0100, weight_decay=0.001000, dropout=0.2000, Test_Mean=0.8584, Test_Std=0.0075, runtime_average=6.18s, epoch_average=62.39ms, CommunitySearchTime=0.007297s, NMI=0.0000 (std=0.0000), Jaccard=0.8674 (std=0.0000), F1=0.9290 (std=0.0000)

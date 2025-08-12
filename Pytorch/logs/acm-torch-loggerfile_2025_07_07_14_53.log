@@ -1,0 +1,6 @@
+2025-07-07 14:53:19: Init - Done Proccessing...
+2025-07-07 14:53:44: Total time elapsed - 23.5477s
+2025-07-07 14:53:44: Run 9 Summary - model=acmsmn, dataset=wisconsin, variant=1, structure_info=2, fixed_splits=0, Hidden=512, layers=2, hops=5, resnet=1, layer_norm=1, att_hopwise_distinct=0, fuse_hop=mlp, normalization=global_w, online_cs=adaptive_cs, lambda_pen=0.5, lambda_2hop=0.5, threshold=0.9, comm_size=30, approach=distinct_hop_svds_low, lr=0.0100, weight_decay=0.001000, dropout=0.3000, Test_Mean=0.8412, Test_Std=0.0808, runtime_average=2.35s, epoch_average=23.79ms, CommunitySearchTime=0.003686s, NMI=0.0000 (std=0.0000), Jaccard=0.8069 (std=0.0000), F1=0.8931 (std=0.0000)
+2025-07-07 14:53:49: Init - Done Proccessing...
+2025-07-07 14:54:14: Total time elapsed - 24.0625s
+2025-07-07 14:54:14: Run 9 Summary - model=acmsmn, dataset=wisconsin, variant=1, structure_info=2, fixed_splits=0, Hidden=512, layers=2, hops=5, resnet=1, layer_norm=1, att_hopwise_distinct=0, fuse_hop=mlp, normalization=global_w, online_cs=adaptive_cs, lambda_pen=0.5, lambda_2hop=0.5, threshold=0.9, comm_size=30, approach=distinct_hop_svds_low, lr=0.0100, weight_decay=0.001000, dropout=0.2000, Test_Mean=0.8275, Test_Std=0.0786, runtime_average=2.41s, epoch_average=24.31ms, CommunitySearchTime=0.004342s, NMI=0.0000 (std=0.0000), Jaccard=0.8124 (std=0.0000), F1=0.8965 (std=0.0000)

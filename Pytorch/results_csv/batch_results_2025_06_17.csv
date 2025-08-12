@@ -1,0 +1,1 @@
+model,dataset_name,variant,structure_info,init_layers_X,hidden,layers,hops,fixed_splits,resnet,layer_norm,att_hopwise_distinct,fuse_hop,normalization,online_cs,lambda_pen,lambda_2hop,threshold,comm_size,approach,split,lr,weight_decay,dropout,test_mean,test_std,runtime_average,epoch_average,cs_time,cs_nmi,cs_nmi_std,cs_jaccard,cs_jaccard_std,cs_f1,cs_f1_std
