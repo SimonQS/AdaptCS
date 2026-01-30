@@ -841,6 +841,7 @@ def distinct_hop_precompute(args, adj_low, adj_high, I, features, device):
     current_A_EXP_low = adj_low
     low_channels = [I, (adj_low - I)]
     prev_A_EXP_low = adj_low
+<<<<<<< HEAD
     
     # For hard masking: track cumulative sum of all previous hop matrices
     masking_mode = getattr(args, 'masking', 'adaptive')
@@ -899,6 +900,13 @@ def distinct_hop_precompute(args, adj_low, adj_high, I, features, device):
                 distinct_A_EXP_low.size(),
                 device=device
             ).coalesce()
+=======
+
+    for i in range(1, args.hops - 1):
+        current_A_EXP_low = torch.spmm(current_A_EXP_low, adj_low)  
+        distinct_A_EXP_low = current_A_EXP_low - prev_A_EXP_low
+        distinct_A_EXP_low = distinct_A_EXP_low.coalesce()
+>>>>>>> origin/main
 
         low_channels.append(distinct_A_EXP_low)
         prev_A_EXP_low = current_A_EXP_low
@@ -1041,8 +1049,12 @@ def train_prep(logger, args):
         "svd_rank": args.svd_rank,
         "top": args.top,
         "comm_size": args.comm_size,
+<<<<<<< HEAD
         "approach": args.approach,
         "masking": getattr(args, 'masking', 'adaptive')
+=======
+        "approach": args.approach
+>>>>>>> origin/main
     }
 
     run_info = {
