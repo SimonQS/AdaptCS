@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 Pytorch/data/reddit_adj.npz
 Pytorch/data/reddit.npz
 Geometric
 logs
 results_csv
-=======
-HCS/data/reddit_adj.npz
-HCS/data/reddit.npz
->>>>>>> origin/main
