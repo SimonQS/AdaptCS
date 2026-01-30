@@ -46,7 +46,7 @@ class GCN(nn.Module):
         if model_type == "acmgcnpp":
             self.mlpX = MLP(nfeat, nhid, nhid, num_layers=init_layers_X, dropout=0)
         
-        if model_type == "hcs":
+        if model_type == "adaptcs":
             self.mlp_out = MLP(nhid, nhid, nclass, num_layers=1, dropout=dropout)
             self.mlpX = MLP(nfeat, nhid, nhid, num_layers=init_layers_X, dropout=dropout)
             self.resnet = resnet
@@ -95,102 +95,7 @@ class GCN(nn.Module):
                 )
             )
 
-        if (
-            self.model_type.startswith("icsgnn")
-        ):
-            self.gcns.append(
-                GraphConvolution(
-                    nfeat,
-                    1 * nhid,
-                    nnodes,
-                    model_type=model_type,
-                    variant=variant,
-                    normalization=normalization,
-                    resnet = resnet,
-                    hops = hops,
-                    structure_info=structure_info,
-                    query = query
-                )
-            )
-            self.gcns.append(
-                GraphConvolution(
-                    1 * nhid,
-                    2 * nhid,
-                    nnodes,
-                    model_type=model_type,
-                    # output_layer=1,
-                    variant=variant,
-                    normalization=normalization,
-                    resnet = resnet,
-                    hops = hops,
-                    structure_info=structure_info,
-                    query = query
-                )
-            )
-            self.gcns.append(
-                GraphConvolution(
-                    2 * nhid,
-                    nclass,
-                    nnodes,
-                    model_type=model_type,
-                    output_layer=1,
-                    variant=variant,
-                    normalization=normalization,
-                    resnet = resnet,
-                    hops = hops,
-                    structure_info=structure_info,
-                    query = query
-                )
-            )
-
-        if (self.model_type.startswith("qdgnn")
-            or self.model_type.startswith("coclep")
-        ):
-            self.gcns.append(
-                GraphConvolution(
-                    nfeat,
-                    nfeat,
-                    nnodes,
-                    model_type=model_type,
-                    variant=variant,
-                    normalization=normalization,
-                    resnet = resnet,
-                    hops = hops,
-                    structure_info=structure_info,
-                    query = query
-                )
-            )
-            self.gcns.append(
-                GraphConvolution(
-                    2 * nfeat,
-                    nhid,
-                    nnodes,
-                    model_type=model_type,
-                    variant=variant,
-                    normalization=normalization,
-                    resnet = resnet,
-                    hops = hops,
-                    structure_info=structure_info,
-                    query = query
-                )
-            )
-            self.gcns.append(
-                GraphConvolution(
-                    2 * nhid,
-                    nhid,
-                    nnodes,
-                    model_type=model_type,
-                    output_layer=3,
-                    variant=variant,
-                    normalization=normalization,
-                    resnet = resnet,
-                    hops = hops,
-                    structure_info=structure_info,
-                    query = query
-                )
-            )
-            self.mlp_out = MLP(2 * nhid, nhid, nclass, num_layers=4, dropout=0.5)
-        elif self.model_type == "hcs":
+        if self.model_type == "adaptcs":
             self.gcns.append(
                 GraphConvolution(
                     nfeat,
@@ -239,7 +144,7 @@ class GCN(nn.Module):
         self.reset_parameters()
 
     def reset_parameters(self):
-        if self.model_type == "hcs":
+        if self.model_type == "adaptcs":
             self.mlpX.reset_parameters()
             self.mlp_out.reset_parameters()
         elif self.model_type == "acmgcnpp":
@@ -253,14 +158,14 @@ class GCN(nn.Module):
         if (
             self.model_type == "acmgcn"
             or self.model_type == "acmsgc"
-            or self.model_type == "hcs"
+            or self.model_type == "adaptcs"
             or self.model_type == "acmsnowball"
             or self.model_type == "acmgcnp"
             or self.model_type == "acmgcnpp"
         ):
 
             x = F.dropout(x, self.dropout, training=self.training)
-            if self.model_type == "acmgcnpp" or self.model_type == "hcs":
+            if self.model_type == "acmgcnpp" or self.model_type == "adaptcs":
                 xX = F.dropout(
                     F.relu(self.mlpX(x, input_tensor=True)),
                     self.dropout,
@@ -300,7 +205,7 @@ class GCN(nn.Module):
             fea1 = self.gcns[0](x, adj_low, adj_high, adj_low_unnormalized)
             return fea1
 
-        if self.model_type == "hcs":
+        if self.model_type == "adaptcs":
             if self.resnet:
                 emb, att = self.gcns[0](x, adj_low, adj_high, adj_low_unnormalized) + xX
             else:

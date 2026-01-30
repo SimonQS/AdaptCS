@@ -126,10 +126,6 @@ class GraphConvolution(Module):
             Parameter(torch.FloatTensor(in_features, out_features).to(device)),
             Parameter(torch.FloatTensor(in_features, out_features).to(device)),
         )
-        self.weight_query = Parameter(torch.FloatTensor(nnodes, out_features).to(device))
-        self.graph_hgc = HypergraphConv(in_features, out_features)
-        self.query_hgc = HypergraphConv(nnodes, out_features)
-        self.coclep_mlp = Parameter(torch.FloatTensor(out_features*4, out_features*2).to(device))
     
         self.weight_low_channel, self.weight_high_channel= (
             Parameter(torch.FloatTensor(in_features, out_features).to(device)),
@@ -209,7 +205,6 @@ class GraphConvolution(Module):
     def reset_parameters(self):
         for param in [
             self.weight_low, self.weight_high, self.weight_mlp, self.struc_low,
-            self.weight_query, self.coclep_mlp,
             self.weight_low_channel, self.weight_high_channel,
             self.weight_low_channel_2, self.weight_high_channel_2,
             self.weight_low_mix, self.weight_high_mix,
@@ -248,7 +243,7 @@ class GraphConvolution(Module):
 
     def attention3(self, output_low, output_high, output_mlp):
         T = 3
-        if self.model_type == "acmgcnp" or self.model_type == "acmgcnpp" or self.model_type == "hcs" and args.layer_norm:
+        if self.model_type == "acmgcnp" or self.model_type == "acmgcnpp" or self.model_type == "adaptcs" and args.layer_norm:
             output_low, output_high, output_mlp = (
                 self.layer_norm_low(output_low),
                 self.layer_norm_high(output_high),
@@ -273,7 +268,7 @@ class GraphConvolution(Module):
 
     def attention2(self, output_low, output_high):
         T = 2
-        if self.model_type in ["acmgcnp", "acmgcnpp", "hcs"] and args.layer_norm:
+        if self.model_type in ["acmgcnp", "acmgcnpp", "adaptcs"] and args.layer_norm:
             output_low = self.layer_norm_low(output_low)
             output_high = self.layer_norm_high(output_high)
 
@@ -298,7 +293,7 @@ class GraphConvolution(Module):
 
     def attention2_2(self, output_low, output_high):
         T = 2
-        if self.model_type in ["acmgcnp", "acmgcnpp", "hcs"] and args.layer_norm:
+        if self.model_type in ["acmgcnp", "acmgcnpp", "adaptcs"] and args.layer_norm:
             output_low = self.layer_norm_low(output_low)
             output_high = self.layer_norm_high(output_high)
 
@@ -538,13 +533,8 @@ class GraphConvolution(Module):
                     )
                 )
 
-<<<<<<< HEAD
         fused_emb, att = self._fuse_hopwise(args, channels, device) 
         return fused_emb, att
-=======
-        fused_emb = self._fuse_hopwise(args, channels, device) 
-        return fused_emb
->>>>>>> origin/main
 
     def cross_skip_forward(
         self,
@@ -622,22 +612,14 @@ class GraphConvolution(Module):
         if args.fuse_hop == 'mlp':
             cat_channels = torch.cat(channels, dim=1).to(device)  
             fused_emb = F.relu(torch.mm(cat_channels, self.hopwise_fuse_mlp))
-<<<<<<< HEAD
             att = None  # MLP fusion doesn't use attention
             return fused_emb, att
-=======
-            return fused_emb
->>>>>>> origin/main
 
         elif args.fuse_hop == 'qkv':
             stack_channels = torch.stack(channels, dim=0).to(device)
             fused_emb = self.attention_hop(stack_channels, args.att_hopwise_distinct)
-<<<<<<< HEAD
             att = None  # QKV fusion returns fused result directly
             return fused_emb, att 
-=======
-            return fused_emb 
->>>>>>> origin/main
 
         elif args.fuse_hop == 'bank':
             stack_channels = torch.stack(channels, dim=0).to(device) 
@@ -654,11 +636,7 @@ class GraphConvolution(Module):
             att, _ = self.attention_hop(stack_channels, args.att_hopwise_distinct) 
             att_broadcast = att.t().unsqueeze(-1) 
             fused_emb = (stack_channels * att_broadcast).sum(dim=0)   
-<<<<<<< HEAD
             return fused_emb, att_broadcast
-=======
-            return fused_emb
->>>>>>> origin/main
 
 
     def forward(self, input, adj_low, adj_high, adj_low_unnormalized):
@@ -683,13 +661,9 @@ class GraphConvolution(Module):
                 + self.att_mlp * output_mlp
             )
 
-        elif self.model_type == "hcs":
+        elif self.model_type == "adaptcs":
             if args.approach == 'distinct_hop':
-<<<<<<< HEAD
                 fused_emb, att = self.distinct_hop_forward(
-=======
-                fused_emb = self.distinct_hop_forward(
->>>>>>> origin/main
                     args, input, adj_low, adj_high, adj_low_unnormalized, device
                 )
             elif args.approach == 'cross_skip' or args.approach == 'distinct_hop_svds_low' or args.approach == 'distinct_hop_svds_rand':
@@ -698,10 +672,7 @@ class GraphConvolution(Module):
                 )
             else:
                 fused_emb = None
-<<<<<<< HEAD
                 att = None
-=======
->>>>>>> origin/main
             return fused_emb, att
 
         else:

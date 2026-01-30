@@ -8,7 +8,7 @@ def arg_parser():
         "--no-cuda", action="store_true", default=False, help="Disables CUDA training."
     )
     parser.add_argument(
-        "--device", type=int, default=1, help="CUDA device id to use if available."
+        "--device", type=int, default=7, help="CUDA device id to use if available."
     )
     parser.add_argument(
         "--param_tunning",
@@ -27,34 +27,9 @@ def arg_parser():
         "--model",
         type=str,
         choices=[
-            "gcn",
-            "sgc",
-            "graphsage",
-            "snowball",
-            "gcnII",
-            "acmgcn",
-            "acmgcnp",
-            "acmgcnpp",
-            "acmsgc",
-            "hcs",
-            "acmgraphsage",
-            "acmsnowball",
-            "icsgnn",
-            "qdgnn",
-            "coclep",
-            "icsgnn_tanh",
-            "qdgnn_tanh",
-            "coclep_tanh",
-            "icsgnn_acm",
-            "qdgnn_acm",
-            "coclep_acm",
-            "mlp",
-            'k_core', 
-            'k_truss', 
-            'clique',
-        ],
+            "adaptcs"],
         help="name of the model",
-        default="hcs",
+        default="adaptcs",
     )
     parser.add_argument(
         "--optimizer",
@@ -215,7 +190,7 @@ def arg_parser():
         "--masking",
         type=str,
         choices=["hard", "adaptive"],
-        default="hard",
+        default="adaptive",
         help="Masking strategy for distinct_hop: 'hard' masks all previously seen edges, 'adaptive' uses ReLU(A^k - A^(k-1))"
     )
     args = parser.parse_args()
@@ -238,7 +213,7 @@ def arg_parser():
         args.hops = 3
         args.svd_rank = 50
     
-    if args.model != 'hcs': 
+    if args.model != 'adaptcs': 
         args.hidden = 128
         args.hop = 3
     

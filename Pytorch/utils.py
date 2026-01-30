@@ -591,11 +591,7 @@ def sparse_mx_to_torch_sparse_tensor(sparse_mx):
     )
     values = torch.from_numpy(sparse_mx.data)
     shape = torch.Size(sparse_mx.shape)
-    if args.model.startswith("coclep"):
-        hyperedge, _ = add_remaining_self_loops(indices)
-        return torch.sparse.FloatTensor(indices, values, shape), hyperedge
-    else:
-        return torch.sparse.FloatTensor(indices, values, shape)
+    return torch.sparse.FloatTensor(indices, values, shape)
 
 def sparse_mx_to_torch_csr_tensor(sparse_mx):
     """
@@ -652,7 +648,7 @@ def dct_reduce(x: torch.Tensor, dim_half: int):
 def cross_channel_skip_connect(args, features, adj_low, adj_high, I, device):
 
     t = perf_counter()
-    if (args.model == "hcs") and (args.hops > 1):
+    if (args.model == "adaptcs") and (args.hops > 1):
 
         features = features.to(device)
 
@@ -841,7 +837,6 @@ def distinct_hop_precompute(args, adj_low, adj_high, I, features, device):
     current_A_EXP_low = adj_low
     low_channels = [I, (adj_low - I)]
     prev_A_EXP_low = adj_low
-<<<<<<< HEAD
     
     # For hard masking: track cumulative sum of all previous hop matrices
     masking_mode = getattr(args, 'masking', 'adaptive')
@@ -900,13 +895,6 @@ def distinct_hop_precompute(args, adj_low, adj_high, I, features, device):
                 distinct_A_EXP_low.size(),
                 device=device
             ).coalesce()
-=======
-
-    for i in range(1, args.hops - 1):
-        current_A_EXP_low = torch.spmm(current_A_EXP_low, adj_low)  
-        distinct_A_EXP_low = current_A_EXP_low - prev_A_EXP_low
-        distinct_A_EXP_low = distinct_A_EXP_low.coalesce()
->>>>>>> origin/main
 
         low_channels.append(distinct_A_EXP_low)
         prev_A_EXP_low = current_A_EXP_low
@@ -1049,13 +1037,9 @@ def train_prep(logger, args):
         "svd_rank": args.svd_rank,
         "top": args.top,
         "comm_size": args.comm_size,
-<<<<<<< HEAD
         "approach": args.approach,
         "masking": getattr(args, 'masking', 'adaptive')
-=======
-        "approach": args.approach
->>>>>>> origin/main
-    }
+  }
 
     run_info = {
         "result": 0,
@@ -1094,7 +1078,7 @@ def train_prep(logger, args):
         adj_low = adj_low.to(device).to_sparse()
 
 
-    if (args.model == "hcs") and (args.hops > 1):     
+    if (args.model == "adaptcs") and (args.hops > 1):     
         t = perf_counter()
 
         adj_low = sparse_mx_to_torch_sparse_tensor(adj_low).float().to(device)
@@ -2239,7 +2223,7 @@ def community_search(adj, query_nodes, emb, community_size, labels, method='sub_
         tuple: cs_f1, cs_jaccard, cs_nmi, cs_time
     """
    
-    if args.model in ['hcs']:
+    if args.model in ['adaptcs']:
 
         if method == 'bfs_teleport':
             communities, cs_time = bfs_teleport_sparse(adj, emb, query_nodes, community_size, args.threshold)
