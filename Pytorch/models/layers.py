@@ -538,8 +538,8 @@ class GraphConvolution(Module):
                     )
                 )
 
-        fused_emb = self._fuse_hopwise(args, channels, device) 
-        return fused_emb
+        fused_emb, att = self._fuse_hopwise(args, channels, device) 
+        return fused_emb, att
 
     def cross_skip_forward(
         self,
@@ -617,12 +617,14 @@ class GraphConvolution(Module):
         if args.fuse_hop == 'mlp':
             cat_channels = torch.cat(channels, dim=1).to(device)  
             fused_emb = F.relu(torch.mm(cat_channels, self.hopwise_fuse_mlp))
-            return fused_emb
+            att = None  # MLP fusion doesn't use attention
+            return fused_emb, att
 
         elif args.fuse_hop == 'qkv':
             stack_channels = torch.stack(channels, dim=0).to(device)
             fused_emb = self.attention_hop(stack_channels, args.att_hopwise_distinct)
-            return fused_emb 
+            att = None  # QKV fusion returns fused result directly
+            return fused_emb, att 
 
         elif args.fuse_hop == 'bank':
             stack_channels = torch.stack(channels, dim=0).to(device) 
@@ -639,7 +641,7 @@ class GraphConvolution(Module):
             att, _ = self.attention_hop(stack_channels, args.att_hopwise_distinct) 
             att_broadcast = att.t().unsqueeze(-1) 
             fused_emb = (stack_channels * att_broadcast).sum(dim=0)   
-            return fused_emb
+            return fused_emb, att_broadcast
 
 
     def forward(self, input, adj_low, adj_high, adj_low_unnormalized):
@@ -666,7 +668,7 @@ class GraphConvolution(Module):
 
         elif self.model_type == "hcs":
             if args.approach == 'distinct_hop':
-                fused_emb = self.distinct_hop_forward(
+                fused_emb, att = self.distinct_hop_forward(
                     args, input, adj_low, adj_high, adj_low_unnormalized, device
                 )
             elif args.approach == 'cross_skip' or args.approach == 'distinct_hop_svds_low' or args.approach == 'distinct_hop_svds_rand':
@@ -675,6 +677,7 @@ class GraphConvolution(Module):
                 )
             else:
                 fused_emb = None
+                att = None
             return fused_emb, att
 
         else:

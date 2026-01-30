@@ -1,3 +1,0 @@
-2024-11-08 05:53:48: Init - Done Proccessing...
-2024-11-08 05:53:53: Total time elapsed - 5.0765s
-2024-11-08 05:53:53: Run 0 Summary - model: acmgcnpp, dataset: texas, variant: 1.0, init_layers_X: 1, structure_info: 1, Hidden: 64, learning rate 0.0100, weight decay 0.000500, dropout 0.2000, layers 1, Test Mean: 0.0838, Test Std: 0.2514, runtime average time: 0.51s, epoch average time: 25.13ms

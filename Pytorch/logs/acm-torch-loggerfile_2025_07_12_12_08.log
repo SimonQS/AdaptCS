@@ -1,3 +1,0 @@
-2025-07-12 12:08:33: Init - Done Proccessing...
-2025-07-12 12:09:31: Total time elapsed - 57.3015s
-2025-07-12 12:09:31: Run 9 Summary - model=acmsmn, dataset=film, variant=1, structure_info=2, fixed_splits=0, Hidden=512, layers=2, hops=5, resnet=1, layer_norm=1, att_hopwise_distinct=0, fuse_hop=mlp, normalization=global_w, online_cs=adaptive_cs, lambda_pen=0.5, lambda_2hop=0.5, threshold=0.9, svd_rank=50, top=2, comm_size=150, approach=distinct_hop_svds_low, lr=0.0100, weight_decay=0.001000, dropout=0.2000, Test_Mean=0.3860, Test_Std=0.0142, runtime_average=5.73s, epoch_average=57.88ms, CommunitySearchTime=0.002910s, NMI=0.0000 (std=0.0000), Jaccard=0.3544 (std=0.0000), F1=0.5233 (std=0.0000)

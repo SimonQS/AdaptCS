@@ -1,3 +1,0 @@
-2025-06-16 11:43:32: Init - Done Proccessing...
-2025-06-16 11:49:31: Total time elapsed - 126.9019s
-2025-06-16 11:49:31: Run 9 Summary - model=acmsmn, dataset=citeseer, variant=1, structure_info=1, fixed_splits=1.0, Hidden=512, layers=2, hops=5, resnet=1, layer_norm=1, att_hopwise_distinct=0, fuse_hop=mlp, normalization=global_w, online_cs=bfs_teleport, lambda_pen=1, lambda_2hop=0.5, threshold=0.9, comm_size=150, approach=distinct_hop_svds_low, lr=0.0100, weight_decay=0.001000, dropout=0.5000, Test_Mean=0.7283, Test_Std=0.0189, runtime_average=12.69s, epoch_average=128.18ms, CommunitySearchTime=4.617635s, NMI=0.0000 (std=0.0000), Jaccard=0.7661 (std=0.0000), F1=0.8676 (std=0.0000)

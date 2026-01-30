@@ -1,3 +1,0 @@
-2025-05-07 04:20:39: Init - Done Proccessing...
-2025-05-07 04:21:12: Total time elapsed - 32.4583s
-2025-05-07 04:21:12: Run 9 Summary - model=acmsmn, dataset=cora, variant=1, structure_info=2, fixed_splits=0, Hidden=64, layers=1, hops=9, resnet=0, layer_norm=0, att_hopwise_distinct=0, fuse_hop=mlp, normalization=softmax, online_cs=sub_cs, lambda_pen=1, lambda_2hop=0.5, threshold=0.9, comm_size=20, approach=distinct_hop, lr=0.0100, weight_decay=0.001000, dropout=0.2000, Test_Mean=0.6951, Test_Std=0.0250, runtime_average=3.25s, epoch_average=32.79ms, CommunitySearchTime=0.006104s, NMI=0.0000 (std=0.0000), Jaccard=0.7084 (std=0.0000), F1=0.8293 (std=0.0000)

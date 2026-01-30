@@ -1,9 +1,0 @@
-2025-06-10 10:50:37: Init - Done Proccessing...
-2025-06-10 10:50:39: Total time elapsed - 0.0000s
-2025-06-10 10:50:39: Run NA Summary - model=k_core, dataset=chameleon, variant=1, structure_info=0, fixed_splits=0, Hidden=1024, layers=2, hops=9, resnet=1, layer_norm=1, att_hopwise_distinct=0, fuse_hop=mlp, normalization=none, online_cs=signed_cs, lambda_pen=1, lambda_2hop=0.5, threshold=0.9, comm_size=30, approach=distinct_hop, lr=NA, weight_decay=NA, dropout=NA, Test_Mean=0.0000, Test_Std=0.0000, runtime_average=NAs, epoch_average=NAms, CommunitySearchTime=0.000154s, NMI=0.0000 (std=0.0000), Jaccard=0.3407 (std=0.0000), F1=0.5082 (std=0.0000)
-2025-06-10 10:50:42: Init - Done Proccessing...
-2025-06-10 10:50:45: Total time elapsed - 0.0000s
-2025-06-10 10:50:45: Run NA Summary - model=k_truss, dataset=chameleon, variant=1, structure_info=0, fixed_splits=0, Hidden=1024, layers=2, hops=9, resnet=1, layer_norm=1, att_hopwise_distinct=0, fuse_hop=mlp, normalization=none, online_cs=signed_cs, lambda_pen=1, lambda_2hop=0.5, threshold=0.9, comm_size=30, approach=distinct_hop, lr=NA, weight_decay=NA, dropout=NA, Test_Mean=0.0000, Test_Std=0.0000, runtime_average=NAs, epoch_average=NAms, CommunitySearchTime=0.000101s, NMI=0.0000 (std=0.0000), Jaccard=0.5703 (std=0.0000), F1=0.7264 (std=0.0000)
-2025-06-10 10:50:49: Init - Done Proccessing...
-2025-06-10 10:53:36: Total time elapsed - 0.0000s
-2025-06-10 10:53:36: Run NA Summary - model=clique, dataset=chameleon, variant=1, structure_info=0, fixed_splits=0, Hidden=1024, layers=2, hops=9, resnet=1, layer_norm=1, att_hopwise_distinct=0, fuse_hop=mlp, normalization=none, online_cs=signed_cs, lambda_pen=1, lambda_2hop=0.5, threshold=0.9, comm_size=30, approach=distinct_hop, lr=NA, weight_decay=NA, dropout=NA, Test_Mean=0.0000, Test_Std=0.0000, runtime_average=NAs, epoch_average=NAms, CommunitySearchTime=0.000125s, NMI=0.0000 (std=0.0000), Jaccard=0.3683 (std=0.0000), F1=0.5383 (std=0.0000)

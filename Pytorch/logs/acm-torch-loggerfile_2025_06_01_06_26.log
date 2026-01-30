@@ -1,3 +1,0 @@
-2025-06-01 06:26:49: Init - Done Proccessing...
-2025-06-01 06:27:10: Total time elapsed - 21.4071s
-2025-06-01 06:27:10: Run 9 Summary - model=qdgnn, dataset=texas, variant=1, structure_info=0, fixed_splits=0, Hidden=1024, layers=2, hops=3, resnet=0, layer_norm=0, att_hopwise_distinct=0, fuse_hop=mlp, normalization=softmax, online_cs=sub_topk, lambda_pen=1, lambda_2hop=0.5, threshold=0.9, comm_size=20, approach=distinct_hop, lr=0.0100, weight_decay=0.001000, dropout=0.2000, Test_Mean=0.7049, Test_Std=0.0703, runtime_average=2.14s, epoch_average=21.62ms, CommunitySearchTime=0.000595s, NMI=0.0000 (std=0.0000), Jaccard=0.4179 (std=0.0000), F1=0.5895 (std=0.0000)

@@ -1,3 +1,0 @@
-2025-06-11 17:17:13: Init - Done Proccessing...
-2025-06-11 17:41:07: Total time elapsed - 1415.1326s
-2025-06-11 17:41:07: Run 9 Summary - model=coclep_acm, dataset=citeseer, variant=1, structure_info=0, fixed_splits=0, Hidden=1024, layers=2, hops=9, resnet=1, layer_norm=1, att_hopwise_distinct=0, fuse_hop=mlp, normalization=none, online_cs=signed_cs, lambda_pen=1, lambda_2hop=0.5, threshold=0.9, comm_size=30, approach=distinct_hop, lr=0.0100, weight_decay=0.001000, dropout=0.2000, Test_Mean=0.2581, Test_Std=0.0868, runtime_average=141.51s, epoch_average=1429.43ms, CommunitySearchTime=0.356687s, NMI=0.0000 (std=0.0000), Jaccard=0.3148 (std=0.0000), F1=0.4789 (std=0.0000)

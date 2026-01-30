@@ -1,3 +1,0 @@
-2025-05-30 06:51:23: Init - Done Proccessing...
-2025-05-30 06:52:08: Total time elapsed - 44.3449s
-2025-05-30 06:52:08: Run 9 Summary - model=qdgnn, dataset=cora, variant=1, structure_info=0, fixed_splits=0, Hidden=1024, layers=2, hops=3, resnet=0, layer_norm=0, att_hopwise_distinct=0, fuse_hop=mlp, normalization=softmax, online_cs=sub_topk, lambda_pen=1, lambda_2hop=0.5, threshold=0.9, comm_size=20, approach=distinct_hop, lr=0.0100, weight_decay=0.001000, dropout=0.2000, Test_Mean=0.8548, Test_Std=0.0109, runtime_average=4.43s, epoch_average=44.79ms, CommunitySearchTime=0.001123s, NMI=0.0000 (std=0.0000), Jaccard=0.9368 (std=0.0000), F1=0.9674 (std=0.0000)

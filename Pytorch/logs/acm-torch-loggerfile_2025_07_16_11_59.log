@@ -1,3 +1,0 @@
-2025-07-16 11:59:14: Init - Done Proccessing...
-2025-07-16 12:16:24: Total time elapsed - 1026.7062s
-2025-07-16 12:16:24: Run 9 Summary - model=acmsmn, dataset=cornell, variant=1, structure_info=2, fixed_splits=0, Hidden=512, layers=2, hops=5, resnet=1, layer_norm=1, att_hopwise_distinct=0, fuse_hop=bank, normalization=global_w, online_cs=bfs_teleport, lambda_pen=0.5, lambda_2hop=0.5, threshold=0.9, svd_rank=100, top=2, comm_size=30, approach=distinct_hop_svds_low, lr=0.0100, weight_decay=0.001000, dropout=0.5000, Test_Mean=0.8098, Test_Std=0.0763, runtime_average=102.67s, epoch_average=1037.08ms, CommunitySearchTime=0.053947s, NMI=0.0000 (std=0.0000), Jaccard=0.8352 (std=0.0000), F1=0.9102 (std=0.0000)

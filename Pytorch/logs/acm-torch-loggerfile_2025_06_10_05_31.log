@@ -1,3 +1,0 @@
-2025-06-10 05:31:59: Init - Done Proccessing...
-2025-06-10 05:34:01: Total time elapsed - 118.8279s
-2025-06-10 05:34:01: Run 9 Summary - model=qdgnn_acm, dataset=cornell, variant=1, structure_info=0, fixed_splits=0, Hidden=1024, layers=2, hops=9, resnet=1, layer_norm=1, att_hopwise_distinct=0, fuse_hop=mlp, normalization=none, online_cs=signed_cs, lambda_pen=1, lambda_2hop=0.5, threshold=0.9, comm_size=30, approach=distinct_hop, lr=0.0100, weight_decay=0.001000, dropout=0.2000, Test_Mean=0.4525, Test_Std=0.1984, runtime_average=11.88s, epoch_average=120.03ms, CommunitySearchTime=0.052943s, NMI=0.0000 (std=0.0000), Jaccard=0.4607 (std=0.0000), F1=0.6308 (std=0.0000)

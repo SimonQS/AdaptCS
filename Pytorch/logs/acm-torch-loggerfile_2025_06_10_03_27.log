@@ -1,3 +1,0 @@
-2025-06-10 03:27:22: Init - Done Proccessing...
-2025-06-10 03:28:03: Total time elapsed - 40.1407s
-2025-06-10 03:28:03: Run 9 Summary - model=icsgnn_acm, dataset=texas, variant=1, structure_info=0, fixed_splits=0, Hidden=64, layers=2, hops=9, resnet=1, layer_norm=1, att_hopwise_distinct=0, fuse_hop=mlp, normalization=none, online_cs=bfs_teleport, lambda_pen=1, lambda_2hop=0.5, threshold=0.9, comm_size=30, approach=distinct_hop, lr=0.0100, weight_decay=0.001000, dropout=0.2000, Test_Mean=0.8049, Test_Std=0.0653, runtime_average=4.01s, epoch_average=40.55ms, CommunitySearchTime=0.002915s, NMI=0.0000 (std=0.0000), Jaccard=0.8672 (std=0.0000), F1=0.9289 (std=0.0000)

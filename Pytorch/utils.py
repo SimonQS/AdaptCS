@@ -841,11 +841,64 @@ def distinct_hop_precompute(args, adj_low, adj_high, I, features, device):
     current_A_EXP_low = adj_low
     low_channels = [I, (adj_low - I)]
     prev_A_EXP_low = adj_low
+    
+    # For hard masking: track cumulative sum of all previous hop matrices
+    masking_mode = getattr(args, 'masking', 'adaptive')
+    if masking_mode == 'hard':
+        cumulative_mask = I + (adj_low - I)  # A^(0) + A^(1)
 
     for i in range(1, args.hops - 1):
         current_A_EXP_low = torch.spmm(current_A_EXP_low, adj_low)  
-        distinct_A_EXP_low = current_A_EXP_low - prev_A_EXP_low
-        distinct_A_EXP_low = distinct_A_EXP_low.coalesce()
+        
+        if masking_mode == 'hard':
+            # Hard masking: Mask(A^k, sum of all previous A^(j))
+            # Set entries to 0 where cumulative_mask is non-zero
+            current_A_EXP_low = current_A_EXP_low.coalesce()
+            cumulative_mask = cumulative_mask.coalesce()
+            
+            # Create mask: keep only entries where cumulative_mask == 0
+            indices = current_A_EXP_low.indices()
+            values = current_A_EXP_low.values()
+            
+            # Check which entries in cumulative_mask are zero
+            mask_indices = cumulative_mask.indices()
+            mask_dict = set()
+            for j in range(mask_indices.size(1)):
+                mask_dict.add((mask_indices[0, j].item(), mask_indices[1, j].item()))
+            
+            # Keep only values where the position is NOT in cumulative_mask
+            keep_mask = []
+            for j in range(indices.size(1)):
+                pos = (indices[0, j].item(), indices[1, j].item())
+                keep_mask.append(pos not in mask_dict)
+            
+            keep_mask = torch.tensor(keep_mask, device=device)
+            filtered_indices = indices[:, keep_mask]
+            filtered_values = values[keep_mask]
+            
+            distinct_A_EXP_low = torch.sparse_coo_tensor(
+                filtered_indices, filtered_values, 
+                current_A_EXP_low.size(), device=device
+            ).coalesce()
+            
+            # Update cumulative mask for next iteration
+            cumulative_mask = (cumulative_mask + current_A_EXP_low).coalesce()
+        else:
+            # Adaptive masking: ReLU(A^k - A^(k-1))
+            distinct_A_EXP_low = current_A_EXP_low - prev_A_EXP_low
+            distinct_A_EXP_low = distinct_A_EXP_low.coalesce()
+            
+            # Apply ReLU: keep only positive values
+            indices = distinct_A_EXP_low.indices()
+            values = distinct_A_EXP_low.values()
+            positive_mask = values > 0
+            
+            distinct_A_EXP_low = torch.sparse_coo_tensor(
+                indices[:, positive_mask],
+                values[positive_mask],
+                distinct_A_EXP_low.size(),
+                device=device
+            ).coalesce()
 
         low_channels.append(distinct_A_EXP_low)
         prev_A_EXP_low = current_A_EXP_low
@@ -988,7 +1041,8 @@ def train_prep(logger, args):
         "svd_rank": args.svd_rank,
         "top": args.top,
         "comm_size": args.comm_size,
-        "approach": args.approach
+        "approach": args.approach,
+        "masking": getattr(args, 'masking', 'adaptive')
     }
 
     run_info = {

@@ -168,7 +168,7 @@ def arg_parser():
             "distinct_hop_svds_rand",
         ],
         help="which approach to use for the message passing",
-        default="distinct_hop_svds_low",
+        default="distinct_hop",
     )
     parser.add_argument(
         "--lambda_pen",
@@ -210,6 +210,13 @@ def arg_parser():
         type=str,
         default=None,
         help="save the batch csv file"
+    )
+    parser.add_argument(
+        "--masking",
+        type=str,
+        choices=["hard", "adaptive"],
+        default="hard",
+        help="Masking strategy for distinct_hop: 'hard' masks all previously seen edges, 'adaptive' uses ReLU(A^k - A^(k-1))"
     )
     args = parser.parse_args()
 

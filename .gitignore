@@ -1,2 +1,5 @@
-ACM-Pytorch/data/reddit_adj.npz
-ACM-Pytorch/data/reddit.npz
+Pytorch/data/reddit_adj.npz
+Pytorch/data/reddit.npz
+Geometric
+logs
+results_csv

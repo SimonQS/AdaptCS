@@ -1,6 +1,0 @@
-2025-05-30 04:45:06: Init - Done Proccessing...
-2025-05-30 04:45:07: Total time elapsed - 0.0000s
-2025-05-30 04:45:07: Run NA Summary - model=k_truss, dataset=cora, variant=1, structure_info=0, fixed_splits=0, Hidden=1024, layers=2, hops=3, resnet=0, layer_norm=0, att_hopwise_distinct=0, fuse_hop=mlp, normalization=softmax, online_cs=sub_cs, lambda_pen=1, lambda_2hop=0.5, threshold=0.7, comm_size=20, approach=distinct_hop, lr=NA, weight_decay=NA, dropout=NA, Test_Mean=0.0000, Test_Std=0.0000, runtime_average=NAs, epoch_average=NAms, CommunitySearchTime=0.000212s, NMI=0.0000 (std=0.0000), Jaccard=0.2063 (std=0.0000), F1=0.3421 (std=0.0000)
-2025-05-30 04:45:22: Init - Done Proccessing...
-2025-05-30 04:45:38: Total time elapsed - 0.0000s
-2025-05-30 04:45:38: Run NA Summary - model=clique, dataset=cora, variant=1, structure_info=0, fixed_splits=0, Hidden=1024, layers=2, hops=3, resnet=0, layer_norm=0, att_hopwise_distinct=0, fuse_hop=mlp, normalization=softmax, online_cs=sub_cs, lambda_pen=1, lambda_2hop=0.5, threshold=0.7, comm_size=20, approach=distinct_hop, lr=NA, weight_decay=NA, dropout=NA, Test_Mean=0.0000, Test_Std=0.0000, runtime_average=NAs, epoch_average=NAms, CommunitySearchTime=0.000140s, NMI=0.0000 (std=0.0000), Jaccard=0.2137 (std=0.0000), F1=0.3521 (std=0.0000)

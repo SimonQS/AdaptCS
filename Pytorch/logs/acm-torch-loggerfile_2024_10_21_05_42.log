@@ -1,3 +1,0 @@
-2024-10-21 05:42:57: Init - Done Proccessing...
-2024-10-21 05:43:01: Total time elapsed - 3.0828s
-2024-10-21 05:43:01: Run 0 Summary - model: acmsmn, dataset: cora, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 256, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.8637, Test Std: 0.0000, runtime average time: 3.08s, epoch average time: 31.14ms

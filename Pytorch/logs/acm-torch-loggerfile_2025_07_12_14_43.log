@@ -1,3 +1,0 @@
-2025-07-12 14:43:07: Init - Done Proccessing...
-2025-07-12 14:44:01: Total time elapsed - 20.2328s
-2025-07-12 14:44:01: Run 9 Summary - model=icsgnn_tanh, dataset=cora, variant=1, structure_info=2, fixed_splits=0, Hidden=128, layers=2, hops=5, resnet=1, layer_norm=1, att_hopwise_distinct=0, fuse_hop=mlp, normalization=global_w, online_cs=adaptive_cs, lambda_pen=0.5, lambda_2hop=0.5, threshold=0.9, svd_rank=50, top=2, comm_size=150, approach=distinct_hop_svds_low, lr=0.0100, weight_decay=0.001000, dropout=0.2000, Test_Mean=0.8637, Test_Std=0.0142, runtime_average=2.02s, epoch_average=20.44ms, CommunitySearchTime=0.677367s, NMI=0.0000 (std=0.0000), Jaccard=0.8951 (std=0.0000), F1=0.9447 (std=0.0000)

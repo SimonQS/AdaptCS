@@ -1,3 +1,0 @@
-2025-07-09 07:56:06: Init - Done Proccessing...
-2025-07-09 08:01:17: Total time elapsed - 217.2534s
-2025-07-09 08:01:17: Run 9 Summary - model=acmsmn, dataset=reddit, variant=1, structure_info=2, fixed_splits=0, Hidden=256, layers=2, hops=3, resnet=1, layer_norm=1, att_hopwise_distinct=0, fuse_hop=mlp, normalization=global_w, online_cs=adaptive_cs, lambda_pen=0.5, lambda_2hop=0.5, threshold=0.9, svd_rank=50, top=2, comm_size=1000, approach=distinct_hop_svds_low, lr=0.0100, weight_decay=0.001000, dropout=0.5000, Test_Mean=0.6862, Test_Std=0.0115, runtime_average=21.73s, epoch_average=219.45ms, CommunitySearchTime=0.028932s, NMI=0.0000 (std=0.0000), Jaccard=0.6003 (std=0.0000), F1=0.7503 (std=0.0000)

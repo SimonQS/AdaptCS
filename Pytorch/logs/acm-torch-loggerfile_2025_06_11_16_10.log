@@ -1,3 +1,0 @@
-2025-06-11 16:10:02: Init - Done Proccessing...
-2025-06-11 16:11:36: Total time elapsed - 62.5173s
-2025-06-11 16:11:36: Run 9 Summary - model=icsgnn_acm, dataset=cora, variant=1, structure_info=0, fixed_splits=0, Hidden=1024, layers=2, hops=9, resnet=1, layer_norm=1, att_hopwise_distinct=0, fuse_hop=mlp, normalization=none, online_cs=signed_cs, lambda_pen=1, lambda_2hop=0.5, threshold=0.9, comm_size=30, approach=distinct_hop, lr=0.0100, weight_decay=0.001000, dropout=0.2000, Test_Mean=0.8547, Test_Std=0.0098, runtime_average=6.25s, epoch_average=63.15ms, CommunitySearchTime=0.624346s, NMI=0.0000 (std=0.0000), Jaccard=0.8556 (std=0.0000), F1=0.9222 (std=0.0000)

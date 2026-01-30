@@ -1,7 +1,0 @@
-2024-10-31 03:54:46: Init - Done Proccessing...
-2024-10-31 03:54:55: Total time elapsed - 8.0051s
-2024-10-31 03:54:55: Run 0 Summary - model: acmsmn, dataset: texas, variant: 0, init_layers_X: 1, structure_info: 1, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.0676, Test Std: 0.2027, runtime average time: 0.80s, epoch average time: 80.86ms
-2024-10-31 03:55:02: Total time elapsed - 15.7743s
-2024-10-31 03:55:02: Run 1 Summary - model: acmsmn, dataset: texas, variant: 0, init_layers_X: 1, structure_info: 1, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.1324, Test Std: 0.2649, runtime average time: 1.58s, epoch average time: 79.67ms
-2024-10-31 03:55:10: Total time elapsed - 23.5291s
-2024-10-31 03:55:10: Run 2 Summary - model: acmsmn, dataset: texas, variant: 0, init_layers_X: 1, structure_info: 1, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.1757, Test Std: 0.2749, runtime average time: 2.35s, epoch average time: 79.22ms

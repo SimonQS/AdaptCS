@@ -1,3 +1,0 @@
-2025-01-31 04:45:26: Init - Done Proccessing...
-2025-01-31 04:45:37: Total time elapsed - 9.8638s
-2025-01-31 04:45:37: Run 0 Summary - model: acmsmn, dataset: texas, variant: 0, init_layers_X: 1, structure_info: 0, Hidden: 64, learning rate 0.0100, weight decay 0.001000, dropout 0.2000, layers 1, Test Mean: 0.7838, Test Std: 0.0000, runtime average time: 9.86s, epoch average time: 99.63ms

@@ -1,3 +1,0 @@
-2025-07-07 13:51:22: Init - Done Proccessing...
-2025-07-07 13:51:59: Total time elapsed - 36.7363s
-2025-07-07 13:51:59: Run 9 Summary - model=acmsmn, dataset=texas, variant=1, structure_info=2, fixed_splits=0, Hidden=512, layers=2, hops=5, resnet=1, layer_norm=1, att_hopwise_distinct=0, fuse_hop=mlp, normalization=global_w, online_cs=bfs_teleport, lambda_pen=0.5, lambda_2hop=0.5, threshold=0.8, comm_size=30, approach=distinct_hop_svds_low, lr=0.0100, weight_decay=0.001000, dropout=0.5000, Test_Mean=0.8639, Test_Std=0.0648, runtime_average=3.67s, epoch_average=37.11ms, CommunitySearchTime=0.001210s, NMI=0.0000 (std=0.0000), Jaccard=0.7414 (std=0.0000), F1=0.8515 (std=0.0000)
