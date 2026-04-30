@@ -3,3 +3,4 @@ Pytorch/data/reddit.npz
 Geometric
 logs
 results_csv
+__pycache__/
