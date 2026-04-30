@@ -38,6 +38,7 @@ labels,
 split_idx_lst,
 ) = train_prep(logger, args)
 
+
 criterion = nn.NLLLoss()
 eval_func = eval_acc
 
@@ -58,6 +59,36 @@ for split_id in range(args.num_splits):
 
     queries = torch.nonzero(idx_train, as_tuple=True)[0].tolist()
 
+    # # Print dataset statistics
+    # unique_labels, label_counts = np.unique(labels.cpu().numpy(), return_counts=True)
+    # # print("\n=== Dataset Statistics ===")
+    # # print(f"Total samples: {labels.size(0)}")
+    # # print(f"Number of classes: {len(unique_labels)}")
+    
+    # idx_train_np = idx_train.cpu().numpy()
+    # idx_val_np = idx_val.cpu().numpy()
+    # idx_test_np = idx_test.cpu().numpy()
+    
+    # # print("\nTrain set:")
+    # train_labels = labels[idx_train].cpu().numpy()
+    # train_unique, train_counts = np.unique(train_labels, return_counts=True)
+    # # for label, count in zip(train_unique, train_counts):
+    #     # print(f"  Class {label}: {count} samples")
+    
+    # # print("\nValidation set:")
+    # val_labels = labels[idx_val].cpu().numpy()
+    # val_unique, val_counts = np.unique(val_labels, return_counts=True)
+    # # for label, count in zip(val_unique, val_counts):
+    #     # print(f"  Class {label}: {count} samples")
+    
+    # # print("\nTest set:")
+    # test_labels = labels[idx_test].cpu().numpy()
+    # test_unique, test_counts = np.unique(test_labels, return_counts=True)
+    # # for label, count in zip(test_unique, test_counts):
+    #     # print(f"  Class {label}: {count} samples")
+    
+    # # print("=" * 27 + "\n")
+    # # raise Exception("Stop after printing dataset statistics for debugging.")
 
     model = GCN(
         nfeat=features.size(1),

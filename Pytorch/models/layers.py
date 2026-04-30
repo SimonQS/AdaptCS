@@ -464,7 +464,15 @@ class GraphConvolution(Module):
             normalized_adj_low_list  = [adj_low[i]  for i in range(len(adj_low))]
             normalized_adj_high_list = [adj_high[i] for i in range(len(adj_high))]
 
-        for i in range(len(adj_low)):  
+        output_struc_low = None
+        if self.structure_info == 1:
+            if getattr(adj_low_unnormalized, "is_sparse", False):
+                output_struc_low = torch.sparse.mm(adj_low_unnormalized, self.struc_low)
+            else:
+                output_struc_low = torch.mm(adj_low_unnormalized, self.struc_low)
+            output_struc_low = F.relu(output_struc_low)
+
+        for i in range(len(adj_low)):
             
             if self.variant == 1:
                 out_low_i = torch.spmm(
@@ -493,9 +501,6 @@ class GraphConvolution(Module):
             output_high.append(out_high_i)
 
             if self.structure_info == 1:
-                output_struc_low = F.relu(
-                    torch.mm(adj_low_unnormalized, self.struc_low)
-                )
                 (
                     self.att_low,
                     self.att_high,
@@ -551,6 +556,14 @@ class GraphConvolution(Module):
 
         output_mlp = torch.mm(input_feats, self.weight_mlp)
 
+        output_struc_low = None
+        if self.structure_info == 1:
+            if getattr(adj_low_unnormalized, "is_sparse", False):
+                output_struc_low = torch.sparse.mm(adj_low_unnormalized, self.struc_low)
+            else:
+                output_struc_low = torch.mm(adj_low_unnormalized, self.struc_low)
+            output_struc_low = F.relu(output_struc_low)
+
         H = len(low_channels) 
         for i in range(H):
             feat_low_i  = low_channels[i]
@@ -567,9 +580,6 @@ class GraphConvolution(Module):
             output_high.append(out_high_i)
 
             if self.structure_info == 1:
-                output_struc_low = F.relu(
-                    torch.mm(adj_low_unnormalized, self.struc_low)
-                )
                 (self.att_low, self.att_high, self.att_mlp, self.att_struc_vec_low) = self.attention4(
                     out_low_i, out_high_i, output_mlp, output_struc_low
                 )

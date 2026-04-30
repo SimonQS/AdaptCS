@@ -8,7 +8,7 @@ def arg_parser():
         "--no-cuda", action="store_true", default=False, help="Disables CUDA training."
     )
     parser.add_argument(
-        "--device", type=int, default=7, help="CUDA device id to use if available."
+        "--device", type=int, default=1, help="CUDA device id to use if available."
     )
     parser.add_argument(
         "--param_tunning",
@@ -143,7 +143,7 @@ def arg_parser():
             "distinct_hop_svds_rand",
         ],
         help="which approach to use for the message passing",
-        default="distinct_hop",
+        default="distinct_hop_svds_low",
     )
     parser.add_argument(
         "--lambda_pen",
