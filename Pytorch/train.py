@@ -169,22 +169,24 @@ run_info.update(
 print(f"Total time for training: {total_time:.4f}s")
 
 with torch.no_grad():
+    test_nodes = torch.nonzero(idx_test, as_tuple=True)[0]
+    num_queries = min(50, test_nodes.numel())
+    query_nodes = test_nodes[
+        torch.randperm(test_nodes.numel(), device=device)[:num_queries]
+    ]
     if (args.model == 'adaptcs' and 
         (args.approach == 'distinct_hop_svds_low' or 
         args.approach == 'distinct_hop_svds_rand')):
-        query_nodes = torch.randperm(labels[idx_test].size(0), device=device)[:50]
         cs_f1, cs_jaccard, cs_nmi, cs_time = community_search(
             adj_low_unnormalized[0], query_nodes, best_emb, args.comm_size, labels,
             method=args.online_cs,
         )
     elif (args.model == 'adaptcs' and args.approach == 'distinct_hop'):
-        query_nodes = torch.randperm(labels[idx_test].size(0), device=device)[:50]
         cs_f1, cs_jaccard, cs_nmi, cs_time = community_search(
             adj_low[1], query_nodes, best_emb, args.comm_size, labels,
             method=args.online_cs,
         )
     else:
-        query_nodes = torch.randperm(labels[idx_test].size(0), device=device)[:50]
         cs_f1, cs_jaccard, cs_nmi, cs_time = community_search(
             adj_low[0], query_nodes, best_emb, args.comm_size, labels,
             method=args.online_cs,

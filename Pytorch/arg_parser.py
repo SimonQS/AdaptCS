@@ -8,7 +8,7 @@ def arg_parser():
         "--no-cuda", action="store_true", default=False, help="Disables CUDA training."
     )
     parser.add_argument(
-        "--device", type=int, default=1, help="CUDA device id to use if available."
+        "--device", type=int, default=2, help="CUDA device id to use if available."
     )
     parser.add_argument(
         "--param_tunning",
